@@ -44,7 +44,8 @@ DE.ApplicationController = new(function(){
         btnSubmit,
         _submitFail, $submitedTooltip, $requiredTooltip,
         $listControlMenu, listControlItems = [], listObj,
-        bodyWidth = 0;
+        bodyWidth = 0,
+        requireUserAction = true;
 
     var LoadingDocument = -256;
 
@@ -647,6 +648,7 @@ DE.ApplicationController = new(function(){
 
         Common.Gateway.documentReady();
         Common.Analytics.trackEvent('Load', 'Complete');
+        requireUserAction = false;
     }
 
     function onEditorPermissions(params) {
@@ -749,6 +751,10 @@ DE.ApplicationController = new(function(){
         } else if (type == Asc.c_oAscAdvancedOptionsID.TXT) {
             api && api.asc_setAdvancedOptions(Asc.c_oAscAdvancedOptionsID.TXT, advOptions.asc_getRecommendedSettings() || new Asc.asc_CTextOptions());
             onLongActionEnd(Asc.c_oAscAsyncActionType['BlockInteraction'], LoadingDocument);
+        }
+        if (requireUserAction) {
+            Common.Gateway.userActionRequired();
+            requireUserAction = false;
         }
     }
 
@@ -1016,10 +1022,12 @@ DE.ApplicationController = new(function(){
 
         api = isPDF ? new Asc.PDFEditorApi({
             'id-view'  : 'editor_sdk',
-            'embedded' : true
+            'embedded' : true,
+            'isRtlInterface': window.isrtl
         }) : new Asc.asc_docs_api({
             'id-view'  : 'editor_sdk',
-            'embedded' : true
+            'embedded' : true,
+            'isRtlInterface': window.isrtl
         });
 
         if (api){

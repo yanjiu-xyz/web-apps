@@ -157,6 +157,7 @@
       "textNo": "No",
       "textNoLicenseTitle": "È stato raggiunto il limite della licenza",
       "textNoMatches": "Nessuna corrispondenza",
+      "textOk": "OK",
       "textOpenFile": "Inserisci la password per aprire il file",
       "textPaidFeature": "Funzionalità a pagamento",
       "textRemember": "Ricordare la mia scelta",
@@ -172,16 +173,21 @@
       "txtProtected": "Una volta inserita la password e aperto il file, la password corrente del file verrà resettata",
       "warnLicenseAnonymous": "Accesso negato per utenti anonimi.<br>Questo documento verrà aperto solo per la visualizzazione.",
       "warnLicenseBefore": "Licenza non attiva.<br>Ti preghiamo di contattare il tuo amministratore.",
-      "warnLicenseExceeded": "Hai raggiunto il limite delle connessioni simultanee agli editor %1. Questo documento sarà aperto solo in modalità di visualizzazione.  Ti preghiamo di contattare il tuo amministratore per maggior informazioni.",
+      "warnLicenseExceeded": "Hai raggiunto il limite di connessioni simultanee a %1 editor. Questo documento sarà aperto solo in modalità visualizzazione.  Ti preghiamo di contattare il tuo amministratore per maggior informazioni.",
       "warnLicenseExp": "La tua licenza è scaduta. Ti preghiamo di aggiornala e ricaricare la pagina.",
       "warnLicenseLimitedNoAccess": "La licenza è scaduta. Non hai accesso alle funzionalità di modifica di documenti. Per favore, contatta il tuo amministratore.",
       "warnLicenseLimitedRenewed": "La licenza deve essere rinnovata. Hai l'accesso limitato alle funzionalità di modifiche di documenti.<br>Ti preghiamo di contattare il tuo amministratore per ottenere accesso completo.",
       "warnLicenseUsersExceeded": "Hai raggiunto il limite degli utenti per gli editor %1. Ti preghiamo di contattare il tuo amministratore per maggior informazioni.",
-      "warnNoLicense": "Hai raggiunto il limite delle connessioni simultanee agli editor %1. Questo documento sarà aperto solo in modalità di visualizzazione.  Ti preghiamo di contattare il team di vendite di %1 per i termini di aggiornamento personali.",
+      "warnNoLicense": "Hai raggiunto il limite di connessioni simultanee a %1 editor. Questo documento sarà aperto solo in modalità visualizzazione.  Ti preghiamo di contattare il team di vendite di %1 per i termini di aggiornamento personali.",
       "warnNoLicenseUsers": "Hai raggiunto il limite degli utenti per gli editor %1. Ti preghiamo di contattare il team di vendite di %1 per i termini di aggiornamento personali.",
-      "warnProcessRightsChange": "Non hai il permesso di modificare il file.",
-      "textOk": "Ok"
+      "warnProcessRightsChange": "Non hai il permesso di modificare il file."
     }
+  },
+  "Draw": {
+    "textColor": "Colore",
+    "textCustomColor": "Colore personalizzato",
+    "textLineSize": "Dimensione della riga",
+    "textOpacity": "Opacità"
   },
   "Error": {
     "convertationTimeoutText": "È stato superato il tempo massimo della conversione.",
@@ -210,6 +216,7 @@
     "errorKeyEncrypt": "Descrittore della chiave sconosciuto",
     "errorKeyExpire": "Descrittore della chiave è scaduto",
     "errorLoadingFont": "I caratteri non sono stati caricati.<br>Si prega di contattare l'amministratore di Document Server.",
+    "errorSaveWatermark": "Questo file contiene un'immagine di filigrana collegata a un altro dominio.<br>Per renderla visibile nel PDF, aggiorna l'immagine di filigrana in modo che sia collegata allo stesso dominio del documento, oppure caricala dal tuo computer.",
     "errorSessionAbsolute": "La sessione di modifica del documento è scaduta. Ti preghiamo di ricaricare la pagina.",
     "errorSessionIdle": "Il documento non è stato modificato per molto tempo. Ti preghiamo di ricaricare la pagina.",
     "errorSessionToken": "La connessione al server è stata interrotta. Ti preghiamo di ricaricare la pagina.",
@@ -228,12 +235,11 @@
     "splitDividerErrorText": "Il numero di righe deve essere un divisore di %1",
     "splitMaxColsErrorText": "Il numero di colonne deve essere inferiore a% 1",
     "splitMaxRowsErrorText": "Il numero di righe deve essere inferiore a% 1",
+    "textOk": "OK",
     "unknownErrorText": "Errore sconosciuto.",
     "uploadImageExtMessage": "Formato d'immagine sconosciuto.",
     "uploadImageFileCountMessage": "Nessuna immagine caricata.",
-    "uploadImageSizeMessage": "L'immagine è troppo grande. La dimensione massima è 25 MB.",
-    "errorSaveWatermark": "This file contains a watermark image linked to another domain.<br>To make it visible in PDF, update the watermark image so it links from the same domain as your document, or upload it from your computer.",
-    "textOk": "OK"
+    "uploadImageSizeMessage": "L'immagine è troppo grande. La dimensione massima è 25 MB."
   },
   "LongActions": {
     "applyChangesTextText": "Caricamento di dati...",
@@ -270,13 +276,16 @@
     "waitText": "Si prega di attendere"
   },
   "Toolbar": {
+    "btnRestartNow": "Riavvia ora",
     "dlgLeaveMsgText": "Ci sono i cambiamenti non salvati in questo documento. Fai clic su \"Rimanere su questa pagina\" per attendere il salvataggio automatico. Fai clic su \"Lasciare questa pagina\" per eliminare tutti i cambiamenti non salvati.",
     "dlgLeaveTitleText": "Stai lasciando l'applicazione",
     "leaveButtonText": "Lasciare questa pagina",
     "stayButtonText": "Rimanere su questa pagina",
     "textCloseHistory": "Chiudi cronologia",
     "textEnterNewFileName": "Immetti un nuovo nome file",
-    "textRenameFile": "Rinomina file"
+    "textOk": "OK",
+    "textRenameFile": "Rinomina file",
+    "textSwitchToDesktop": "Passa a desktop"
   },
   "View": {
     "Add": {
@@ -290,6 +299,7 @@
       "textDefault": "Testo selezionato",
       "textDisplay": "Visualizzare",
       "textDone": "Fine",
+      "textDrawing": "Disegno",
       "textEmptyImgUrl": "Devi specificare l'URL dell'immagine.",
       "textExternalLink": "Link esterno",
       "textFirstSlide": "Prima diapositiva",
@@ -387,7 +397,7 @@
       "textFill": "Riempimento",
       "textFinalMessage": "La fine dell'anteprima della diapositiva. Fai clic per uscire.",
       "textFind": "Trovare",
-      "textFindAndReplace": "Trovare e sostituire",
+      "textFindAndReplace": "Trova e sostituisci",
       "textFirstColumn": "Prima colonna",
       "textFirstSlide": "Prima diapositiva",
       "textFontColor": "Colore di carattere",
@@ -442,7 +452,7 @@
       "textRemoveTable": "Eliminare la tabella",
       "textReplace": "Sostituire",
       "textReplaceAll": "Sostituire tutto",
-      "textReplaceImage": "Sostituire l'immagine",
+      "textReplaceImage": "Sostituisci l'immagine",
       "textRequired": "Richiesto",
       "textRight": "A destra",
       "textRotateTextDown": "Ruota testo verso il basso",
@@ -514,11 +524,10 @@
       "textEmail": "email: ",
       "textEnableAll": "Attivare tutto",
       "textEnableAllMacrosWithoutNotification": "Attivare tutte le macro senza notifica",
-      "textExplanationChangeDirection": "L'applicazione verrà riavviata per l'attivazione dell'interfaccia RTL",
       "textFeedback": "Feedback & Supporto",
       "textFind": "Trovare",
-      "textFindAndReplace": "Trovare e sostituire",
-      "textFindAndReplaceAll": "Trovare e sostituire tutto",
+      "textFindAndReplace": "Trova e sostituisci",
+      "textFindAndReplaceAll": "Trova e sostituisci tutto",
       "textHelp": "Aiuto",
       "textHighlight": "Evidenziare risultati",
       "textInch": "Pollice",
@@ -538,10 +547,8 @@
       "textPresentationTitle": "Titolo presentazione",
       "textPrint": "Stampare",
       "textReplace": "Sostituire",
-      "textReplaceAll": "Sostituire tutto",
+      "textReplaceAll": "Sostituisci tutto",
       "textRestartApplication": "Riavvia l'applicazione per rendere effettive le modifiche",
-      "textRTL": "Da destra a sinistra",
-      "textRtlInterface": "Interfaccia RTL",
       "textSameAsSystem": "Uguale al sistema",
       "textSearch": "Trova",
       "textSettings": "Impostazioni",
